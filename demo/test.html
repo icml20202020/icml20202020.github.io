@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>A Wavenet for Speech Denoising - Audio samples</title>
+    <title>N2N-SE: Noise2Noise for Speech Enhancement
+            Without Noisy-Clean Parallel Data - Audio samples</title>
 
     <!-- Bootstrap -->
     <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
@@ -33,7 +34,8 @@
 <div class="container">
 	<div class="boxtest_ref">
 
-	<h2><b><i>A Wavenet for Speech Denoising</i></b></h2>
+	<h2><b><i>N2N-SE: Noise2Noise for Speech Enhancement
+            Without Noisy-Clean Parallel Data</i></b></h2>
 
 <!--<br>
 <b>Dario Rethage*, Jordi Pons* and Xavier Serra</b>
@@ -44,34 +46,9 @@ Music Technology Group, Universitat Pompeu Fabra
 <br>
 &nbsp;
 <br>-->
-<a href="https://arxiv.org/abs/1706.07162"><i>Download the paper</i></a> -
-<a href="https://github.com/drethage/speech-denoising-wavenet"><i>Code available</i></a>
 <br>
-&nbsp;
-<br>
-
-	<p>Test samples were synthetically mixed at one of the following four different SNRs, please select one tab:</p>
-
-
-<div class="btn-group btn-group-justified" role="group" aria-label="...">
-  <div class="btn-group" role="group">
-    <a href="25.html" class="btn btn-default" role="button">2.5 dB</a>
-  </div>
-  <div class="btn-group" role="group">
-    <a href="75.html" class="btn btn-info" role="button">7.5 dB</a>
-  </div>
-  <div class="btn-group" role="group">
-    <a href="125.html" class="btn btn-default" role="button">12.5 dB</a>
-  </div>
-  <div class="btn-group" role="group">
-    <a href="index.html" class="btn btn-default" role="button">17.5 dB</a>
-  </div>
-</div>
-
-<br>
-
 <table>
-
+<!--
   <tr class="spaceUnder">
     <td width="14.2%"></td>
     <td width="14.2%"></td>
@@ -81,14 +58,14 @@ Music Technology Group, Universitat Pompeu Fabra
     <td width="14.2%"></td>
     <td width="14.2%"><font color="gray"><i>speech<br>estimate</i></font></td>
 
-  </tr>
+  </tr> --!>
 
   <tr class="spaceUnder">
-    <td width="14.2%"><font color="gray"><i>ID</i></font></td>
+    <td width="14.2%"><font color="gray"><i>Noise<b><br></b>type</i></font></td>
     <td width="14.2%"><b>Mixture</b></td>
-    <td width="14.2%"><b>Wavenet</b></td>
-    <td width="14.2%"><b>Wavenet</b></td>
-    <td width="14.2%"><b>Clean<br>Speech</b></td>
+    <td width="14.2%"><b>WIener</b><br><b>filtering</b></td>
+    <td width="14.2%"><b>SEDNN</b></td>
+    <td width="14.2%"><b>SEGAN</b></td>
     <td width="14.2%"><b>Clean<br>Background</b></td>
     <td width="14.2%"><b>Wiener</b><br><b>filtering</b></td>
 
@@ -107,7 +84,7 @@ Music Technology Group, Universitat Pompeu Fabra
   <tr class="spaceUnder">
     <td>257/125</td>
     <td><audio controls>
-<source src="audio/7.5dB/p257_125__mixed_conditioned0_6dB.wav" type="audio/mpeg">
+<source src="audio/segan.wav" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio></td>
     <td><audio controls>
